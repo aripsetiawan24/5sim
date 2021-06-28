@@ -80,9 +80,8 @@ $js = json_decode($result);
 $otp = $js->$req;
 $stok = $otp->Qty;
 $harga = $otp->Price;
-//print_r($otp);
 echo "Negara : ".$negara.PHP_EOL;
-//echo "Untuk  : ".$req.PHP_EOL;
+echo "Untuk  : ".$req.PHP_EOL;
 echo "\e[32mHarga  : ".$harga." P\e[39m".PHP_EOL;
 echo "Stok   : ".$stok.PHP_EOL;
 if ($harga < 9) {
