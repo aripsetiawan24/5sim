@@ -69,10 +69,6 @@ if ($req1 == "11"){
 if ($req1 == "12"){
     $req = "discord";
 }
-else{
-	echo "Pilih yang bener tod".PHP_EOL;
-	goto start;
-}
 $xyz = "country.txt";
 foreach (explode("\n", str_replace("\r", "", file_get_contents($xyz))) as $key => $negara) {
 $result = file_get_contents("https://5sim.net/v1/guest/products/$negara/any");
